@@ -1,0 +1,29 @@
+{
+    "predicates": [
+        {
+            "equals": {
+                "method": "POST",
+                "path": "/fcm/send"
+            }
+        }
+    ],
+    "responses": [
+        {
+            "proxy": {
+                "to": "https://fcm.googleapis.com/fcm/send",
+                "mode": "proxyAlways",
+                "predicateGenerators": [
+                    {
+                        "matches": {
+                            "method": true,
+                            "path": true,
+                            "query": true,
+                            "body": true
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+
+}

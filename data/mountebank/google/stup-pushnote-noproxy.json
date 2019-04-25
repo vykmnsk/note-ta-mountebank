@@ -1,0 +1,24 @@
+{
+    "predicates": [
+        {
+            "equals": {
+                "method": "POST",
+                "path": "/pushnote"
+            }
+        }
+    ],
+    "responses": [
+        {
+            "is": {
+                "statusCode": 200,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "id": 3,
+                    "msg": "Google Firebase will send your push notification in a moment!"
+                }
+            }
+        }
+    ]
+}
