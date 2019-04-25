@@ -1,0 +1,22 @@
+<testsuites name="API tests" tests="9" failures="0" time="5.885">
+  <testsuite name="\scenarios\mb.js" errors="0" failures="0" skipped="0" timestamp="2019-01-13T23:58:50" time="1.183" tests="3">
+    <testcase classname="Mountebank › Amazon" name="Mountebank › Amazon: Can read recent /email request to Amazon" time="0.152">
+    </testcase>
+    <testcase classname="Mountebank › Amazon" name="Mountebank › Amazon: Can read recent /sms request to Amazon" time="0.047">
+    </testcase>
+    <testcase classname="Mountebank › Google" name="Mountebank › Google: Can read recent /pushnote request to Google" time="0.031">
+    </testcase>
+  </testsuite>
+  <testsuite name="\smoke\web-login.js" errors="0" failures="0" skipped="0" timestamp="2019-01-13T23:58:50" time="3.751" tests="5">
+    <testcase classname="Invalid Login" name="Invalid Login: GET disabled for login" time="0.437">
+    </testcase>
+    <testcase classname="Invalid Login" name="Invalid Login: Invalid Username and Password" time="0.443">
+    </testcase>
+    <testcase classname="Invalid Login" name="Invalid Login: Invalid Password" time="0.759">
+    </testcase>
+    <testcase classname="Invalid Login" name="Invalid Login: Invalid Username" time="0.437">
+    </testcase>
+    <testcase classname="Valid Login" name="Valid Login: Receive valid authToken" time="0.722">
+    </testcase>
+  </testsuite>
+</testsuites>
