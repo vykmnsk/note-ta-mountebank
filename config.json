@@ -1,0 +1,37 @@
+{
+    "sutName": "TESTAPI",
+    "env": {
+        "dev":{
+            "apiHost": "https://dev-api-test.com"
+        },
+        "staging": {
+            "apiHost": "https://staging-api-test.com"
+        },
+        "test": {
+            "apiHost": "https://test-api-test.com"
+        }
+    },
+    "apiPath": "/api/v1",
+    "testApiPath": ":445/api/v1/testing",
+
+    "mock": {
+        "host": "http://ec2-00-111-22-33.ap-southeast-2.compute.amazonaws.com",
+        "admin": {
+            "port": 3200
+        },
+        "google": {
+            "port": 3201,
+            "path": {
+                "pushnote": "/fcm/send"
+            }
+        },
+        "amazon": {
+            "port": 3202,
+            "path": {
+                "email": "/email",
+                "sms": "/sms"
+            }
+        }
+    }
+
+}

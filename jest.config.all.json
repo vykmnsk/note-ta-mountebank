@@ -1,0 +1,9 @@
+{
+    "roots": [
+        "scenarios",
+        "smoke"
+    ],
+    "testRegex": "\\.*.js$",
+    "setupTestFrameworkScriptFile": "jest-expect-message",
+    "verbose": true
+}

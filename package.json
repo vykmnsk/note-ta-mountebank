@@ -1,0 +1,41 @@
+{
+  "name": "node-ta-mountebank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scenarios": "jest -c jest.config.scenarios.json",
+    "smoke": "jest -c jest.config.smoke.json",
+    "all": "jest -c jest.config.all.json",
+    "mock-start": "mb --configfile data/mountebank/config.ejs --port 3200 --loglevel debug",
+    "mock-stop": "mb stop"
+  },
+  "keywords": [],
+  "author": "Yuri Klind",
+  "license": "",
+  "dependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^23.6.0",
+    "jest-expect-message": "^1.0.2",
+    "jest-junit": "^5.2.0",
+    "jsonpath": "^1.0.0",
+    "mountebank": "^1.15.0",
+    "node-fetch": "^2.3.0"
+  },
+  "jest-junit": {
+    "suiteName": "API tests",
+    "outputDirectory": ".",
+    "outputName": "./junit.xml",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{classname}: {title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
+  }
+}
